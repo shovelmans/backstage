@@ -21,8 +21,20 @@ backstage:
       database:
         client: pg
         connection:
-          host: backstage-postgresql    # nombre del servicio de PostgreSQL
+          host: backstage-postgresql
           port: 5432
           user: backstage
           password: backstage
           database: backstage_plugin_catalog
+
+    # Catalog: entidades que Backstage mostrará
+    catalog:
+      locations:
+        - type: url
+          target: https://github.com/shovelmans/backstage/blob/main/catalog-info.yaml
+
+    # Autenticación básica (Guest activado para pruebas)
+    auth:
+      environment: development
+      providers:
+        guest: {}
