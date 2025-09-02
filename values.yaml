@@ -5,11 +5,9 @@ service:
   type: ClusterIP
   port: 7007
 
-backstage:
-  appConfig:
-    app:
-      baseUrl: http://localhost:7007
-    backend:
-      baseUrl: http://localhost:7007
-      cors:
-        origin: http://localhost:7007
+postgresql:
+  enabled: true
+  auth:
+    username: backstage
+    password: backstage
+    database: backstage_plugin_catalog
