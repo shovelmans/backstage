@@ -31,7 +31,7 @@ backstage:
     catalog:
       locations:
         - type: url
-          target: https://github.com/shovelmans/backstage/blob/main/catalog-info.yaml
+          target: https://raw.githubusercontent.com/shovelmans/backstage/main/catalog-info.yaml
 
     # Autenticación básica (Guest activado para pruebas)
     auth:
