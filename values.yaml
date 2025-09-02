@@ -16,6 +16,7 @@ backstage:
   appConfig:
     app:
       baseUrl: http://localhost:7007
+
     backend:
       baseUrl: http://localhost:7007
       database:
@@ -26,14 +27,15 @@ backstage:
           user: backstage
           password: backstage
           database: backstage_plugin_catalog
+      auth:
+        keys:
+          - secret: "super-secret-key-change-me"
 
-    # Catalog: entidades que Backstage mostrará
     catalog:
       locations:
         - type: url
           target: https://raw.githubusercontent.com/shovelmans/backstage/main/catalog-info.yaml
 
-    # Autenticación básica (Guest activado para pruebas)
     auth:
       environment: development
       providers:
