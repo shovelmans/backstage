@@ -6,3 +6,6 @@ dependencies:
   - name: backstage
     version: "1.8.0"
     repository: "https://backstage.github.io/charts"
+  - name: postgresql
+    version: "15.5.17" # puedes ajustar a la última estable
+    repository: "https://charts.bitnami.com/bitnami"
