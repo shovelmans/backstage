@@ -11,3 +11,18 @@ postgresql:
     username: backstage
     password: backstage
     database: backstage_plugin_catalog
+
+backstage:
+  appConfig:
+    app:
+      baseUrl: http://localhost:7007
+    backend:
+      baseUrl: http://localhost:7007
+      database:
+        client: pg
+        connection:
+          host: backstage-postgresql    # nombre del servicio de PostgreSQL
+          port: 5432
+          user: backstage
+          password: backstage
+          database: backstage_plugin_catalog
